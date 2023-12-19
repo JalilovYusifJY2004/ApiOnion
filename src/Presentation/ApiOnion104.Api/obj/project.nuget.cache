@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "/ZCCTR8uTDESdqNeYC/FvTGIA9sfk7Q+2DXH3D7mIItexKLcC8ARUmjWg3hkmayaKIoSZ2Li+gmffqqrbnzpxg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Zeynal\\Desktop\\ApiOnion104\\src\\Presentation\\ApiOnion104.Api\\ApiOnion104.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zeynal\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Zeynal\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Zeynal\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Zeynal\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Zeynal\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Zeynal\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
