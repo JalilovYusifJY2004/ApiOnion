@@ -1,0 +1,11 @@
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\bin\Debug\net6.0\ApiOnion104.Infrastructure.deps.json
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\bin\Debug\net6.0\ApiOnion104.Infrastructure.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\bin\Debug\net6.0\ApiOnion104.Infrastructure.pdb
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.AssemblyInfo.cs
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\refint\ApiOnion104.Infrastructure.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ApiOnion104.Infrastructure.pdb
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Infrastructure\ApiOnion104.Infrastructure\obj\Debug\net6.0\ref\ApiOnion104.Infrastructure.dll

@@ -1,0 +1,15 @@
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\bin\Debug\net6.0\ApiOnion104.Application.deps.json
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\bin\Debug\net6.0\ApiOnion104.Application.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\bin\Debug\net6.0\ApiOnion104.Application.pdb
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\bin\Debug\net6.0\ApiOnion104.Domain.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\bin\Debug\net6.0\ApiOnion104.Domain.pdb
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.csproj.AssemblyReference.cache
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.AssemblyInfoInputs.cache
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.AssemblyInfo.cs
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.csproj.CoreCompileInputs.cache
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.csproj.CopyComplete
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\refint\ApiOnion104.Application.dll
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ApiOnion104.Application.pdb
+C:\Users\Zeynal\Desktop\ApiOnion104\src\Core\ApiOnion104.Application\obj\Debug\net6.0\ref\ApiOnion104.Application.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ApiOnion104.Api.props" />
+</Project>

@@ -1,18 +1,20 @@
 ﻿using ApiOnion104.Domain.Entities;
+using ApiOnion104.Persistence.Configutations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ApiOnion104.Persistence.Contexts
 {
-    internal class AppDbContext:DbContext
+    public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-                
+
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
@@ -21,11 +23,13 @@ namespace ApiOnion104.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Product>().Property(p => p.Price).IsRequired().HasColumnType("decimal(6,2)");
-            modelBuilder.Entity<Product>().Property(p => p.Description).IsRequired(false).HasColumnType("text");
-            modelBuilder.Entity<Product>().Property(p => p.Name).IsRequired().HasMaxLength(100);
-            modelBuilder.Entity<Product>().Property(p => p.SKU).IsRequired().HasMaxLength(10);
 
+            //modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            //modelBuilder.ApplyConfiguration(new ColorConfiguration());
+            //modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+
+
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
             base.OnModelCreating(modelBuilder);
         }
