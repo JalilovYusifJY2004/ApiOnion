@@ -15,7 +15,7 @@ namespace ApiOnion104.Api.Controllers
         {
           _service = service;
         }
-        [HttpGet("{id}")]
+        //[HttpGet("{id}")]
         //public async Task<IActionResult> Get(int id)
         //{
         //    if (id <= 0) return StatusCode(StatusCodes.Status400BadRequest);
