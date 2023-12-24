@@ -1,13 +1,10 @@
 ﻿using ApiOnion104.Application.Abstractions.Repositories;
+using ApiOnion104.Application.Abstractions.Services;
 using ApiOnion104.Application.DTOs.Categories;
 using ApiOnion104.Domain.Entities;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ApiOnion104.Persistence.Implementations.Services
 {
@@ -24,7 +21,7 @@ namespace ApiOnion104.Persistence.Implementations.Services
         }
             public async Task<ICollection<CategoryItemDto>> GetAllAsync(int page, int take)
             {
-                ICollection<Category> categories = await _repository.GetAllAsync(skip: (page - 1) * take, take: take, isTracking: false).ToListAsync();
+                ICollection<Category> categories = await _repository.GetAllWhere(skip: (page - 1) * take, take: take, isTracking: false,ignoreQuery:true).ToListAsync();
 
             ICollection<CategoryItemDto> categoryDtos = _mapper.Map<ICollection<CategoryItemDto>>(categories);
 
@@ -68,7 +65,13 @@ namespace ApiOnion104.Persistence.Implementations.Services
                 await _repository.SaveChangesAsync();
             }
 
-
+        public async  Task SoftDeleteAsync(int id)
+        {
+            Category category = await _repository.GetByIdAsync(id);
+            if (category is null) throw new Exception("Not found");
+           //_repository.SoftDeleteAsync(category);
+            await _repository.SaveChangesAsync();
         }
+    }
     }
 

@@ -1,4 +1,5 @@
 ﻿using ApiOnion104.Application.Abstractions.Repositories;
+using ApiOnion104.Application.Abstractions.Services;
 using ApiOnion104.Persistence.Contexts;
 using ApiOnion104.Persistence.Implementations.Repositories;
 using ApiOnion104.Persistence.Implementations.Services;
@@ -19,9 +20,11 @@ namespace ApiOnion104.Persistence.ServiceRegistration
         {
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("Default")));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepositoy, ProductRepository>();
 
 
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
             return services;
         }
     }

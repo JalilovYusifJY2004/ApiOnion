@@ -15,6 +15,7 @@ namespace ApiOnion104.Application.MappingProfiles
         {
             CreateMap<Category,CategoryItemDto>().ReverseMap();
             CreateMap<CategoryCreateDto, Category>();
+            CreateMap<Category,IncludeCategoryDto>().ReverseMap();
         }
     }
 }
