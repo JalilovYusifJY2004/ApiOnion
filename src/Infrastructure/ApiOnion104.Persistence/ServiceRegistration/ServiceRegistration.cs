@@ -21,6 +21,7 @@ namespace ApiOnion104.Persistence.ServiceRegistration
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("Default")));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepositoy, ProductRepository>();
+            services.AddScoped<IColorRepositoy, ColorRepository>();
 
 
             services.AddScoped<ICategoryService, CategoryService>();

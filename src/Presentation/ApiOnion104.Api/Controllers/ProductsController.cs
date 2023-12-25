@@ -1,4 +1,5 @@
 ﻿using ApiOnion104.Application.Abstractions.Services;
+using ApiOnion104.Application.DTOs.Products;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,12 @@ namespace ApiOnion104.Api.Controllers
         public async Task<IActionResult> Get(int id)
         {
             return Ok(await _service.GetByIdAsync(id));
+        }
+        [HttpPost]
+        public async Task<IActionResult> Post([FromForm]ProductCreateDto dto)
+        {
+            await _service.CreateAsync(dto);
+            return StatusCode(StatusCodes.Status201Created);
         }
     }
 }

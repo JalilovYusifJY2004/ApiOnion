@@ -19,6 +19,9 @@ namespace ApiOnion104.Application.Validators
 
             RuleFor(p => p.Price).NotEmpty()/*.Must(p=>p>10&p<99999.99m)*/.LessThanOrEqualTo(999999.99m).GreaterThanOrEqualTo(10)/*.Must(CheckPrice)*/;
             RuleFor(p => p.Description).MaximumLength(1000);
+            RuleFor(x => x.CategorId).Must(c => c > 0);
+            RuleForEach(x => x.ColorIds).Must(c => c > 0);
+            RuleFor(x => x.ColorIds).NotNull();
         
         }
         public bool CheckPrice(decimal price)
