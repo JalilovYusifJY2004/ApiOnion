@@ -16,6 +16,7 @@ namespace ApiOnion104.Application.MappingProfiles
                 CreateMap<Product,ProductItemDto>().ReverseMap();
             CreateMap<Product, ProductGetDto>().ReverseMap();
             CreateMap<ProductCreateDto, Product>();
+            CreateMap<ProductUpdateDto, Product>();
         }
     }
 }

@@ -12,5 +12,6 @@ namespace ApiOnion104.Application.Abstractions.Services
         Task<IEnumerable<ProductItemDto>> GettAllPaginated(int page, int take);
         Task<ProductGetDto> GetByIdAsync(int id);
         Task CreateAsync(ProductCreateDto dto);
+        Task UpdateAsync(int id, ProductUpdateDto dto);
     }
 }

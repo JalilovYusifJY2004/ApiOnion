@@ -31,5 +31,13 @@ namespace ApiOnion104.Api.Controllers
             await _service.CreateAsync(dto);
             return StatusCode(StatusCodes.Status201Created);
         }
+        [HttpPut("id")]
+        public async Task<IActionResult> Put(int id, [FromForm] ProductUpdateDto dto)
+        {
+            if (id <= 0) return BadRequest();
+            await _service.UpdateAsync(id, dto);
+            return NoContent();
+           
+        }
     }
 }
