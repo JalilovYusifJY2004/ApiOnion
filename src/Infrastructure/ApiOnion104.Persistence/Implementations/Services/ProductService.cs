@@ -61,15 +61,17 @@ namespace ApiOnion104.Persistence.Implementations.Services
             {
                 if (!await _categoryRepository.IsExistAsync(c => c.Id == dto.CategorId)) throw new Exception("dont");
             }
-            List<ProductColor>productColors= existed.ProductColors.Where(pc => dto.ColorIds.Any(colorId => pc.ColorId == colorId)).ToList();
             existed = _mapper.Map(dto, existed);
+            existed.ProductColors = existed.ProductColors.Where(pc => dto.ColorIds.Any(colorId => pc.ColorId == colorId)).ToList();
 
-            foreach (var colorId in dto.ColorIds.Where(colorId => !productColors.Any(pc => colorId == pc.Id)))
+            foreach (var cId in dto.ColorIds)
             {
-                if (!await _colorRepositoy.IsExistAsync(c => c.Id == colorId)) throw new Exception("dont");
-                existed.ProductColors.Add(new ProductColor { ColorId = colorId });
+                if (!await _colorRepositoy.IsExistAsync(c => c.Id == cId)) throw new Exception("dont");
+                if(!existed.ProductColors.Any(pc=>pc.ColorId== cId))
+                {
+                    existed.ProductColors.Add(new ProductColor { ColorId= cId });
+                }
             }
-            existed.ProductColors = productColors;
             _repositoy.Update(existed);
             await _repositoy.SaveChangesAsync();
         }
