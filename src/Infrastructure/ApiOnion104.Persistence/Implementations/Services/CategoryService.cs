@@ -69,7 +69,7 @@ namespace ApiOnion104.Persistence.Implementations.Services
         {
             Category category = await _repository.GetByIdAsync(id);
             if (category is null) throw new Exception("Not found");
-           //_repository.SoftDeleteAsync(category);
+            _repository.SoftDelete(category);
             await _repository.SaveChangesAsync();
         }
     }

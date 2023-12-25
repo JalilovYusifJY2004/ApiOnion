@@ -13,5 +13,7 @@ namespace ApiOnion104.Application.Abstractions.Services
         Task<ProductGetDto> GetByIdAsync(int id);
         Task CreateAsync(ProductCreateDto dto);
         Task UpdateAsync(int id, ProductUpdateDto dto);
+        Task DeleteAsync(int id);
+        Task SoftDeleteAsync(int id);
     }
 }

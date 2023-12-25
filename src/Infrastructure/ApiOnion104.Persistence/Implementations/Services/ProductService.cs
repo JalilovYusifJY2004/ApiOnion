@@ -2,6 +2,7 @@
 using ApiOnion104.Application.Abstractions.Services;
 using ApiOnion104.Application.DTOs.Products;
 using ApiOnion104.Domain.Entities;
+using ApiOnion104.Persistence.Implementations.Repositories.Generic;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Product = ApiOnion104.Domain.Entities.Product;
@@ -75,5 +76,22 @@ namespace ApiOnion104.Persistence.Implementations.Services
             _repositoy.Update(existed);
             await _repositoy.SaveChangesAsync();
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            Product product = await _repositoy.GetByIdAsync(id);
+            if (product is null) throw new Exception("Not found");
+            _repositoy.Delete(product);
+            await _repositoy.SaveChangesAsync();
+        }
+
+        public async Task SoftDeleteAsync(int id)
+        {
+            Product product = await _repositoy.GetByIdAsync(id);
+            if (product is null) throw new Exception("Not found");
+            _repositoy.SoftDelete(product);
+            await _repositoy.SaveChangesAsync();
+        }
     }
-}
+    }
+
