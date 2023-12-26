@@ -10,5 +10,6 @@ namespace ApiOnion104.Application.Abstractions.Services
     public interface IAuthenticationService
     {
         Task Regoster(RegisterDto dto);
+        Task<string> Login(LoginDto dto);
     }
 }
