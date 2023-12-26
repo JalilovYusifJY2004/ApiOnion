@@ -232,3 +232,8 @@ C:\Users\Zeynal\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\obj\Debug\net6
 C:\Users\Zeynal\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\obj\Debug\net6.0\ApiOnion104.Api.csproj.CopyComplete
 C:\Users\Zeynal\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\obj\Debug\net6.0\ApiOnion104.Api.genruntimeconfig.cache
 C:\Users\Zeynal\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\obj\Debug\net6.0\ref\ApiOnion104.Api.dll
+C:\Users\ca.r214.15\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ca.r214.15\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ca.r214.15\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ca.r214.15\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ca.r214.15\Desktop\ApiOnion\src\Presentation\ApiOnion104.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
