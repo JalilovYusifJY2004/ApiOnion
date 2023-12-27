@@ -22,5 +22,12 @@ namespace ApiOnion104.Api.Controllers
             return NoContent();
         }
 
+        [HttpPost("[Action]")]
+        public async Task<IActionResult> Login([FromForm] LoginDto dto)
+        {
+            string token = await _service.Login(dto);
+            return Ok(token);
+        }
+
     }
 }

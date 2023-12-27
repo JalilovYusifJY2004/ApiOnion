@@ -5,7 +5,9 @@ using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 namespace ApiOnion104.Persistence.Implementations.Services
@@ -52,11 +54,32 @@ namespace ApiOnion104.Persistence.Implementations.Services
 
             }
             if (!await _userManager.CheckPasswordAsync(user, dto.Password)) throw new Exception("Username or email incorrect");
+            ICollection<Claim> claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier,user.Id),
+                new Claim(ClaimTypes.Name,user.UserName),
+                new Claim(ClaimTypes.Email,user.Email),
+                new Claim(ClaimTypes.GivenName,user.Name)   ,
+                new Claim(ClaimTypes.Surname,user.Surname)
+
+
+            };
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecurityKey"]));
+            SigningCredentials signing = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             JwtSecurityToken token = new JwtSecurityToken(
                 issuer: _configuration["Jwt: Issuer"],
-                audience: _configuration["Jwt: Issuer"]
-
+                audience: _configuration["Jwt: Issuer"],
+                claims: claims,
+                notBefore: DateTime.UtcNow,
+                expires: DateTime.UtcNow.AddMinutes(60),
+                signingCredentials: signing
                 );
+            JwtSecurityTokenHandler handlerhandler = new JwtSecurityTokenHandler();
+            return handlerhandler.WriteToken(token);
+
+       
+
+
         }
 
     }
