@@ -1,18 +1,12 @@
 ﻿using ApiOnion104.Domain.Entities;
 using ApiOnion104.Persistence.Common;
-using ApiOnion104.Persistence.Configutations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApiOnion104.Persistence.Contexts
 {
-    public class AppDbContext:IdentityDbContext<AppUser>
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -30,7 +24,7 @@ namespace ApiOnion104.Persistence.Contexts
 
             modelBuilder.ApplyQueryFilters();
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-         
+
 
             base.OnModelCreating(modelBuilder);
         }

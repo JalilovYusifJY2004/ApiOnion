@@ -1087,19 +1087,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ca.r214.15\\.nuget\\packages\\": {}
+    "C:\\Users\\Zeynal\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ca.r214.15\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\ApiOnion104.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Zeynal\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\ApiOnion104.Application.csproj",
       "projectName": "ApiOnion104.Application",
-      "projectPath": "C:\\Users\\ca.r214.15\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\ApiOnion104.Application.csproj",
-      "packagesPath": "C:\\Users\\ca.r214.15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ca.r214.15\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\obj\\",
+      "projectPath": "C:\\Users\\Zeynal\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\ApiOnion104.Application.csproj",
+      "packagesPath": "C:\\Users\\Zeynal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zeynal\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ca.r214.15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zeynal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1113,8 +1118,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ca.r214.15\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Domain\\ApiOnion104.Domain.csproj": {
-              "projectPath": "C:\\Users\\ca.r214.15\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Domain\\ApiOnion104.Domain.csproj"
+            "C:\\Users\\Zeynal\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Domain\\ApiOnion104.Domain.csproj": {
+              "projectPath": "C:\\Users\\Zeynal\\Desktop\\ApiOnion\\src\\Core\\ApiOnion104.Domain\\ApiOnion104.Domain.csproj"
             }
           }
         }
@@ -1166,7 +1171,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
